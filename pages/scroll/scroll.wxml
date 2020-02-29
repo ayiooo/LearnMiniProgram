@@ -1,0 +1,19 @@
+<!--pages/scroll/scroll.wxml-->
+<!-- scroll-view的基本使用 -->
+<!-- 1.水平滚动 scroll-x -->
+<!-- 设置flex之后里面的元素没有在一行显示 -->
+<scroll-view class="container-x" scroll-x>
+<!-- view 是块级元素 -->
+  <view wx:for="{{10}}" class="item-x">{{item}}</view>
+</scroll-view>
+<!-- 2.垂直滚动 scroll-y -->
+<scroll-view class="container-y" scroll-y>
+  <view wx:for="{{10}}" class="item-y">{{item}}</view>
+</scroll-view>
+<!-- 3.其他的补充 -->
+<scroll-view 
+  bindscroll="handlescroll"
+  class="container-y" 
+  scroll-y>
+  <view wx:for="{{10}}" class="item-y">{{item}}</view>
+</scroll-view>

@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.hoverClass {
+  background-color: red;
+  color: white;
+}

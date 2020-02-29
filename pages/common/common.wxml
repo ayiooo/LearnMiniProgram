@@ -1,0 +1,12 @@
+<!--pages/common/common.wxml-->
+<text id="content" selectable>hello 小程序</text>
+<button id="btn" size="mini">按钮</button>
+
+<!-- 1.hidden属性 -->
+<!-- wx:if -->
+<view hidden>哈哈哈</view>
+
+<!-- 2.data-*事件绑定 -->
+
+<!-- 3.bind* catch* -->
+<view bindtap="" catchtap="">哈哈哈</view>
