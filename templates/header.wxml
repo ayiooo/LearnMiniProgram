@@ -1,0 +1,4 @@
+<view>
+  <view>this is header</view>
+  <include src="./nav.wxml" />
+</view>

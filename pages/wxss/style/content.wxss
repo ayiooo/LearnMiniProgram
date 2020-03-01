@@ -1,0 +1,6 @@
+.content-green {
+  background-color: green;
+} 
+.content-gray {
+  background-color: gray;
+}

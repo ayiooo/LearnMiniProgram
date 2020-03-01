@@ -1,0 +1,37 @@
+<!--pages/wxs/wxs.wxml-->
+ <view>------- 在WXML 中使用 WXS -------</view>
+<!-- 在WXML 中使用 WXS -->
+<!-- 1.错误写法 不使用 WXS -->
+<!-- 直接toFixed 不管用 -->
+<!-- <view>{{12.33333.toFixed()}}</view> -->
+<!-- 调用函数 不管用 -->
+<!-- <view>{{numToFixed(12.3333333)}}</view> -->
+
+<!-- 2.wxs定义方式 -->
+<!-- 2.1 和wxml写在一个文件中 -->
+<!-- <wxs module="info">
+  // JS 代码
+  var message = 'Hello world';
+  var name = 'coderwhy';
+  var sum = function(num1, num2) {
+    return num1 + num2
+  }
+  module.exports = {
+    message: message,
+    name: name,
+    sum: sum
+  }
+</wxs> -->
+
+<!-- 2.2定义在单独的wxs文件中，再使用 <wxs> 进行导入 -->
+<!-- 不能使用绝对路径，只能使用相对路径 -->
+<wxs src='../../wxs/info.wxs' module="info"/>
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(10, 20)}}</view>
+
+<!-- 2.3 wxs的实际应用 -->
+<view>{{price}}</view>
+<wxs src="../../wxs/format.wxs" module="format"/>
+<view>{{format.priceFormat(price)}}</view>
+<view>{{time}}</view>

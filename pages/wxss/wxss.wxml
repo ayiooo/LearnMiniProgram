@@ -1,0 +1,22 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- 1.设置样式的三种方式 -->
+<!-- 1.1行内样式 -->
+<view style="color: red; font-size: 30px;">哈哈哈</view>
+<!-- 1.2页内样式 -->
+<view class="box content-gray">呵呵呵
+</view>
+<!-- 1.3全局样式 -->
+<view class="container content-green">嘿嘿嘿</view>
+
+<!-- 2.三种样式作用于一个组件 -->
+<view class="container box" style="color: purple;">嘻嘻嘻</view>
+
+<!-- 3.wxss的单位：rpx -->
+<!-- 前端也需要进行屏幕尺寸的适配：em/rem/vw/vh -->
+<view class="px-box"></view>
+<view class="rpx-box"></view>
+
+<!-- 4.引用导入的css样式 -->
+<button class="btn">按钮</button>
+
+<!-- 5.使用官方样式库weui开发搜索框 -->

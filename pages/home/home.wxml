@@ -1,3 +1,5 @@
 <!--pages/home/home.wxml-->
+<include src="/templates/header.wxml"/>
 <text class="title">hello world </text>
 <button size="mini" type="primary">click</button>
+<include src="/templates/footer.wxml"/>

@@ -1,0 +1,4 @@
+<template name="test">
+  <view style="font-size: 30px; color: green;">{{name}}</view>
+  <view style="color: orange;">{{age}}</view>
+</template>
