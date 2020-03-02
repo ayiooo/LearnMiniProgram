@@ -1,6 +1,53 @@
 /* pages/home/home.wxss */
+
 .title {
   color: red;
   font-size: 30rpx;
   display: block;
+}
+
+.box {
+  width: 300rpx;
+  height: 300rpx;
+  background-color: orange;
+}
+
+.outter {
+  width: 400rpx;
+  height: 400rpx;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: purple;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+}
+
+.view1 {
+  width: 600rpx;
+  height: 600rpx;
+  background-color: green;
+}
+.view2 {
+  width: 400rpx;
+  height: 400rpx;
+  background-color: gray;
+}
+.view3 {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: pink;
 }
