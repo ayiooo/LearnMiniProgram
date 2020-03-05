@@ -1,3 +1,48 @@
 <!--pages/home/home.wxml-->
 <text class="title">hello world </text>
 <button size="mini" type="primary">click</button>
+
+<!-- 1.使用自定义组件的基本使用 -->
+<!-- <my-cpn></my-cpn> -->
+
+<!-- 2.自定义组件的样式细节 -->
+<!-- <my-style /> -->
+
+<!-- 3.给自定义组件传递数据 properties/ 样式 externalClasses-->
+<!-- <my-prop title="哈哈哈" content="呵呵呵"  titleclass="red"/> 
+<my-prop  content="呵呵呵"  titleclass="green"/>  -->
+
+
+<!-- 4.自定义组件向父组件发送数据 -->
+<view>{{counter}}</view>
+<my-event bind:increment="handleIncrement" />
+
+<!-- 5.小练习 -->
+<nav-bar navItems="{{navItems}}" bind:navClick="handleNavClick"/>
+
+<!-- 6.直接在页面操作子组件 
+      直接选中组件修改数据/调用方法
+-->
+<father-control id="fatherControl"/>
+<button bindtap="handleIncrement" size="mini">+ 修改组件内数据</button>
+
+<!-- 7.插槽的使用 -->
+<!-- 7.1单个插槽的使用 -->
+<single-slot>
+  <view>我是内容</view>
+</single-slot>
+<!-- 7.2多个插槽的使用 -->
+<!-- 
+  注意事项：
+    1.给每个插槽起名字：name属性
+    2.必须在Component对象中添加一个选项：options
+      multipleSlots:true
+ -->
+ <block wx:if="{{isShow}}">
+  <many-slot>
+    <view slot="slot3">1</view>
+    <view slot="slot2">2</view>
+    <view slot="slot1">3</view>
+  </many-slot>
+ </block>
+<button bind:tap="handleSwitchisShow">改变isShow的状态</button>

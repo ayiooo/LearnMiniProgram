@@ -1,0 +1,6 @@
+<!--components/many-slot/many-slot.wxml-->
+<view>我是多个插槽的开始</view>
+<view class="slot-one"><slot name="slot1"></slot></view>
+<slot name="slot2"></slot>
+<slot name="slot3"></slot>
+<view>我是多个插槽的结束</view>

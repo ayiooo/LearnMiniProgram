@@ -1,3 +1,11 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-style": "/components/my-style/my-style",
+    "my-prop": "/components/my-prop/my-prop",
+    "my-event": "/components/my-event/my-event",
+    "nav-bar": "/components/nav-bar/nav-bar",
+    "father-control": "/components/father-control/father-control",
+    "single-slot": "/components/single-slot/single-slot",
+    "many-slot": "/components/many-slot/many-slot"
+  }
 }

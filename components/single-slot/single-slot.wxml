@@ -1,0 +1,4 @@
+<!--components/single-slot/single-slot.wxml-->
+<view>我是单个插槽的头部</view>
+<slot></slot>
+<view>我是单个插槽的底部</view>

@@ -1,0 +1,2 @@
+<!--components/father-control/father-control.wxml-->
+<view>父组件点击直接调用子组件的方法：{{counter}}</view>

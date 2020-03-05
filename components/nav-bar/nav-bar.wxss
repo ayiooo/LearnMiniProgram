@@ -1,0 +1,15 @@
+/* components/nav-bar.wxss */
+.nav {
+  display: flex;
+}
+.nav-item {
+  flex: 1;
+  text-align: center;
+}
+.active {
+  color: green;
+}
+.active text {
+  padding: 10rpx;
+  border-bottom: 6rpx solid green;
+}

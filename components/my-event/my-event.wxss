@@ -1,0 +1,6 @@
+/* components/my-event/my-event.wxss */
+.title {
+  font-size: 64rpx;
+  color: blueviolet;
+  font-weight: bold;
+}
